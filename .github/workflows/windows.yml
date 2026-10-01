@@ -1,11 +1,12 @@
-name: Windows build
+name: Windows build and release
 on:
   workflow_dispatch:
   push:
-    tags:
-      - 'v*'
+    branches: [main]
+    paths: ['.github/workflows/windows.yml']
+    tags: ['v*']
 permissions:
-  contents: read
+  contents: write
 jobs:
   build:
     runs-on: windows-latest
@@ -18,8 +19,25 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run package:win
+      - name: Compress Windows app
+        shell: pwsh
+        run: Compress-Archive -Path 'release/小宝贝记账本-win32-x64' -DestinationPath 'release/xiaobaobei-ledger-windows-x64.zip'
       - uses: actions/upload-artifact@v4
         with:
           name: xiaobaobei-ledger-windows-x64
-          path: release/小宝贝记账本-win32-x64/
+          path: release/xiaobaobei-ledger-windows-x64.zip
           retention-days: 30
+      - name: Publish release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          $releaseTag = if ($env:GITHUB_REF -like 'refs/tags/*') { $env:GITHUB_REF_NAME } else { 'v1.0.0' }
+          gh release view $releaseTag *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create $releaseTag --target $env:GITHUB_SHA --title "小宝贝记账本 $releaseTag" --notes 'Windows 64 位运行包。解压整个文件夹后运行小宝贝记账本.exe。包含五开记账、跑环记账、总账合并、联系与支持页面。'
+            if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
+          }
+          gh release upload $releaseTag 'release/xiaobaobei-ledger-windows-x64.zip' --clobber
+          if ($LASTEXITCODE -ne 0) { throw 'Release upload failed' }
