@@ -1,6 +1,6 @@
 {
   "name": "mh-five-accounting",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "小宝贝记账本：梦幻西游五开与跑环记账工具",
   "main": "electron/main.js",
   "license": "MIT",
