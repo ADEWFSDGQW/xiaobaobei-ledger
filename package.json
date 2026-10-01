@@ -1,16 +1,60 @@
 {
   "name": "mh-five-accounting",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "小宝贝记账本：梦幻西游五开与跑环记账工具",
   "main": "electron/main.js",
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "test": "node check-ring-accounting.cjs && node check-startup.cjs && node check-startup-window.cjs",
-    "package:win": "electron-packager . 小宝贝记账本 --platform=win32 --arch=x64 --out=release --overwrite --asar --icon=dist/assets/app-icon.ico --ignore=^/docs --ignore=^/release --ignore=^/.git --ignore=^/check- --win32metadata.ProductName=小宝贝记账本 --win32metadata.FileDescription=小宝贝记账本"
+    "test": "node check-ring-accounting.cjs && node check-startup.cjs && node check-startup-window.cjs && node check-updates.cjs",
+    "package:win": "electron-packager . 小宝贝记账本 --platform=win32 --arch=x64 --out=release --overwrite --asar --icon=dist/assets/app-icon.ico --ignore=^/docs --ignore=^/release --ignore=^/.git --ignore=^/check- --win32metadata.ProductName=小宝贝记账本 --win32metadata.FileDescription=小宝贝记账本",
+    "dist:win": "electron-builder --win nsis --x64 --publish never"
   },
   "devDependencies": {
     "@electron/packager": "20.3.0",
-    "electron": "44.5.1"
-  }
+    "electron": "44.5.1",
+    "electron-builder": "26.15.3"
+  },
+  "dependencies": {
+    "electron-updater": "6.8.9"
+  },
+  "build": {
+    "appId": "io.github.adewfsdgqw.xiaobaobei-ledger",
+    "productName": "小宝贝记账本",
+    "directories": {
+      "output": "installer"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "ADEWFSDGQW",
+        "repo": "xiaobaobei-ledger",
+        "releaseType": "release"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "dist/assets/app-icon.ico",
+      "artifactName": "xiaobaobei-ledger-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowElevation": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "小宝贝记账本",
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": false
+    }
+  },
+  "author": "小宝贝记账本"
 }

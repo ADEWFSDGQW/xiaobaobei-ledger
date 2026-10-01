@@ -13,9 +13,9 @@ async function check(ownsLock){
     focus(){this.focused++}
     static getAllWindows(){return windows}
   }
-  const app={requestSingleInstanceLock:()=>ownsLock,quit:()=>quit++,whenReady:()=>Promise.resolve(),on:(key,callback)=>events[key]=callback};
+  const app={getPath:()=>'/existing/appData',setPath(){},getVersion:()=> '1.1.0',isPackaged:false,requestSingleInstanceLock:()=>ownsLock,quit:()=>quit++,whenReady:()=>Promise.resolve(),on:(key,callback)=>events[key]=callback};
   const electron={app,BrowserWindow:Window,ipcMain:{on(){},handle(key,handler){handlers[key]=handler}},Menu:{buildFromTemplate:value=>value,setApplicationMenu(){}},dialog:{},clipboard:{writeText(value){copied=value}}};
-  vm.runInNewContext(code,{require:name=>name==='electron'?electron:require(name),__dirname:require('node:path').join(__dirname,'electron'),process:{env:{},platform:'win32'},console});
+  vm.runInNewContext(code,{require:name=>name==='electron'?electron:name==='./updates'?require('./electron/updates'):name==='electron-updater'?{autoUpdater:{}}:require(name),__dirname:require('node:path').join(__dirname,'electron'),process:{env:{},platform:'win32'},console});
   await Promise.resolve();
   assert.equal(handlers['copy-mini-program'](),true);
   assert.equal(copied,'#小程序://小宝贝/6rgi3WZtRC9rX0v');

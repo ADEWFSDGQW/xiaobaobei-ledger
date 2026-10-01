@@ -1,4 +1,4 @@
-name: Windows build and release
+name: Windows auto-update release
 on:
   workflow_dispatch:
   push:
@@ -19,26 +19,35 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npx electron check-mini-program.cjs
-      - run: npm run package:win
-      - name: Compress Windows app
+      - name: Check tag matches application version
         shell: pwsh
-        run: Compress-Archive -Path 'release/小宝贝记账本-win32-x64' -DestinationPath 'release/xiaobaobei-ledger-windows-x64.zip'
+        run: |
+          $version = (Get-Content package.json | ConvertFrom-Json).version
+          if ($env:GITHUB_REF -like 'refs/tags/*' -and $env:GITHUB_REF_NAME -ne "v$version") { throw 'Tag and package versions differ' }
+      - run: npm run dist:win
+      - run: npx electron check-update-download.cjs
       - uses: actions/upload-artifact@v4
         with:
-          name: xiaobaobei-ledger-windows-x64
-          path: release/xiaobaobei-ledger-windows-x64.zip
+          name: xiaobaobei-ledger-auto-update-windows
+          path: |
+            installer/*.exe
+            installer/*.blockmap
+            installer/latest.yml
           retention-days: 30
-      - name: Publish release
+      - name: Publish installer and update manifest
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
-          $releaseTag = if ($env:GITHUB_REF -like 'refs/tags/*') { $env:GITHUB_REF_NAME } else { 'v1.0.0' }
+          $version = (Get-Content package.json | ConvertFrom-Json).version
+          $releaseTag = "v$version"
           gh release view $releaseTag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $releaseTag --target $env:GITHUB_SHA --title "小宝贝记账本 $releaseTag · 小程序扫码版" --notes '底部点击“打开小宝贝金算盘”即可显示微信小程序码，并支持复制小程序口令。修复预加载脚本影响复制功能的问题。Windows 64 位运行包，请完整解压后运行小宝贝记账本.exe。包含五开记账、跑环记账、总账合并、联系与支持页面。'
+            gh release create $releaseTag --target $env:GITHUB_SHA --title "小宝贝记账本 $releaseTag · 自动更新版" --notes '首次安装 Setup.exe 一次。此后后台检查并下载新版，正常关闭软件后自动安装，下次打开生效。保留原有账目与价格设置。旧 ZIP 版需要安装本版才能启用自动更新。'
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
-          gh release upload $releaseTag 'release/xiaobaobei-ledger-windows-x64.zip' --clobber
+          $assets = @(Get-ChildItem installer -File | Where-Object { $_.Extension -in '.exe','.blockmap' -or $_.Name -eq 'latest.yml' } | ForEach-Object FullName)
+          if ($assets.Count -lt 3) { throw 'Installer or update manifests missing' }
+          gh release upload $releaseTag @assets --clobber
           if ($LASTEXITCODE -ne 0) { throw 'Release upload failed' }

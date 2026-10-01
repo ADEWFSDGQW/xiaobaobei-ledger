@@ -1,8 +1,12 @@
 const { app, BrowserWindow, ipcMain, Menu, dialog, clipboard } = require('electron')
 const fs = require('fs').promises
 const path = require('path')
+const { createUpdates, preserveProfile } = require('./updates')
+
+preserveProfile(app)
 
 let mainWindow
+let updates
 
 function createWindow() {
   mainWindow = new BrowserWindow({
@@ -64,6 +68,7 @@ function createWindow() {
       { role: 'zoomOut', label: '缩小' }
     ] },
     { label: '帮助(&H)', submenu: [
+      { label: '检查软件更新…', click: () => updates?.check(true) },
       { label: '关于记账本…', click: () => runCommand('about') }
     ] }
   ])
@@ -81,6 +86,9 @@ app.on('second-instance', () => {
 })
 app.whenReady().then(() => {
   createWindow()
+  updates = createUpdates({ app, updater: require('electron-updater').autoUpdater, dialog, getWindow: () => mainWindow })
+  updates.start()
+  app.on('before-quit', () => updates.stop())
 
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {

@@ -12,6 +12,14 @@
 - 联系与支持：作者微信、微信与支付宝自愿打赏、小程序链接复制。
 - 底部“打开小宝贝金算盘”：点击显示微信小程序码，支持扫码和复制小程序口令。
 
+## v1.1.0 自动更新版
+
+首次使用请下载 Releases 中的 `xiaobaobei-ledger-Setup-1.1.0.exe`，安装一次。此后启动 15 秒后后台检查新版，每两小时重试；自动下载，正常关闭软件后安装，下次打开生效。不会在记账途中强制重启。帮助菜单支持手动检查。GitHub 连接失败时继续使用当前版本。旧 ZIP 无法自动升级，需要先安装此版本。
+
+安装版沿用 `%APPDATA%/mh-five-accounting` 中的本地账目、价格和设置；卸载默认不删除这些数据。升级不要同时打开 ZIP 版与安装版。
+
+自动更新安装包使用每用户安装，无需管理员权限。下载校验由 electron-updater 按发布清单执行。
+
 ## v1.0.1 更新
 
 底部小程序入口支持点击打开弹窗，显示小程序码并保留复制口令按钮。修复 Electron 预加载脚本的模块加载问题，恢复剪贴板接口。Windows 运行包可在本仓库 Releases 页面下载，完整解压后运行。
@@ -31,10 +39,10 @@ npm start
 
 ```sh
 npm test
-npm run package:win
+npm run dist:win
 ```
 
-Windows 可运行目录生成于 `release/小宝贝记账本-win32-x64`。分发时保留整个目录，不能只复制 EXE。首次安装及打包需要联网下载 Electron。
+Windows 安装包生成于 `installer/`。发布新版时增加 package.json 的 version 并推送 v版本号 标签，自动构建会将安装包、blockmap 和 latest.yml 一并发布到 GitHub Releases。旧 ZIP 构建命令 npm run package:win 仍可使用，但 ZIP 不支持自动更新。
 
 ## 代码状态与目录
 
