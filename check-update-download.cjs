@@ -10,22 +10,23 @@ const os = require('node:os')
 const http = require('node:http')
 const crypto = require('node:crypto')
 const assert = require('node:assert/strict')
+const currentVersion = require('./package.json').version
 const sandbox = fs.mkdtempSync(path.join(os.tmpdir(), 'ledger-updater-check-'))
 app.setPath('userData', sandbox)
 let server, controller
 app.whenReady().then(async () => {
   try {
-    const installer = fs.readFileSync(path.join(__dirname, 'installer/xiaobaobei-ledger-Setup-1.1.0.exe'))
+    const installer = fs.readFileSync(path.join(__dirname, `installer/xiaobaobei-ledger-Setup-${currentVersion}.exe`))
     const digest = crypto.createHash('sha512').update(installer).digest('base64')
     let corrupt = true, installs = [], quitCallback
-    const metadata = () => `version: 1.1.1\nfiles:\n  - url: update.exe\n    sha512: ${corrupt ? Buffer.alloc(64).toString('base64') : digest}\n    size: ${installer.length}\npath: update.exe\nsha512: ${digest}\n`
+    const metadata = () => `version: 99.0.0\nfiles:\n  - url: update.exe\n    sha512: ${corrupt ? Buffer.alloc(64).toString('base64') : digest}\n    size: ${installer.length}\npath: update.exe\nsha512: ${digest}\n`
     server = http.createServer((req, res) => {
       if (req.url.startsWith('/latest.yml')) res.end(metadata())
       else if (req.url === '/update.exe') res.end(installer)
       else res.writeHead(404).end()
     })
     await new Promise(resolve => server.listen(0, '127.0.0.1', resolve))
-    const adapter = { version: '1.1.0', name: 'ledger-updater-check', isPackaged: true, userDataPath: sandbox, baseCachePath: sandbox, appUpdateConfigPath: path.join(__dirname, 'installer/win-unpacked/resources/app-update.yml'), whenReady: () => Promise.resolve(), onQuit: callback => { quitCallback = callback }, quit: () => { throw new Error('Unexpected restart') } }
+    const adapter = { version: currentVersion, name: 'ledger-updater-check', isPackaged: true, userDataPath: sandbox, baseCachePath: sandbox, appUpdateConfigPath: path.join(__dirname, 'installer/win-unpacked/resources/app-update.yml'), whenReady: () => Promise.resolve(), onQuit: callback => { quitCallback = callback }, quit: () => { throw new Error('Unexpected restart') } }
     const updater = new NsisUpdater({ provider: 'generic', url: `http://127.0.0.1:${server.address().port}` }, adapter)
     updater.httpExecutor = new ElectronHttpExecutor()
     updater.setFeedURL({ provider: 'generic', url: `http://127.0.0.1:${server.address().port}` })
