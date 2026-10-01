@@ -1,0 +1,12 @@
+node_modules/
+release/
+*.log
+*.bak
+*.new
+.env
+.env.*
+*.csv
+*.xlsx
+*.lnk
+.DS_Store
+Thumbs.db
