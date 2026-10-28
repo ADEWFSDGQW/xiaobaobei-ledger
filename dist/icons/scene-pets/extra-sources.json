@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": "12039",
+      "name": "司辰侍者（未来）",
+      "src": "./icons/scene-pets/12039.jpg",
+      "imageUrl": "https://img1.ali213.net/glpic/2025/04/15/584_202504155325753.jpg",
+      "sourcePage": "https://gl.ali213.net/html/2025-4/1642673.html",
+      "sourceLabel": "176、司辰侍者（未来）／①普通：游侠网273",
+      "variant": "普通染色展示，首只蓝色造型",
+      "representation": "来源页面明确标注未来普通槽的原始染色展示图片，未经裁剪或编辑",
+      "sha256": "4017b7524664ca58d0be6355fcd7fe117af0be69f7cb002adf7ef2e761d1a6bc",
+      "width": 584,
+      "height": 139,
+      "bytes": 65680,
+      "sourceLabelVerified": true,
+      "independentGameScreenshotVerified": false,
+      "renderCrop": { "x": 0, "y": 0, "width": 116, "height": 139 },
+      "visualReviewNote": "已查看游侠176未来普通槽的配图，与177过去普通槽的不同图片比对：主体与姿态相近，未来配图脚下时间圈更浅、过去配图更深。未独立证明该差异属于形态还是动画帧，不声称取得带未来名称的独立游戏面板截图。此项按明确来源标签作为参考图；CSS只显示整行第一只，原始图片字节未改。",
+      "corroboratingPage": "https://ol.3dmgame.com/gl/327114_176.html",
+      "comparisonImageUrl": "https://img1.ali213.net/glpic/2025/04/15/584_202504155325717.jpg",
+      "researchNote": "检索未找到网易官方直接说明过去与未来造型相同；公开资料说明两种形态资质、成长、技能相同，不能由此推断造型相同。"
+    }
+  ]
+}

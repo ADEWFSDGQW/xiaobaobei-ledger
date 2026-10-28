@@ -2,6 +2,7 @@ const { app, BrowserWindow, ipcMain, Menu, dialog, clipboard } = require('electr
 const fs = require('fs').promises
 const path = require('path')
 const { createUpdates, preserveProfile } = require('./updates')
+const { installToolboxTimers } = require('./toolbox-timers')
 
 preserveProfile(app)
 
@@ -58,6 +59,15 @@ function createWindow() {
       { label: '换肤…', accelerator: 'Ctrl+T', click: () => runCommand('theme') }
     ] },
     { label: '视图(&V)', submenu: [
+      { label: '挖图统计', accelerator: 'Ctrl+D', click: () => {
+        if (mainWindow && !mainWindow.isDestroyed()) mainWindow.webContents.executeJavaScript('window.treasureProject?.open()')
+      } },
+      { label: '实用工具箱', accelerator: 'Ctrl+G', click: () => {
+        if (mainWindow && !mainWindow.isDestroyed()) mainWindow.webContents.executeJavaScript('window.toolboxProject?.open()')
+      } },
+      { label: '场景记账', accelerator: 'Ctrl+J', click: () => {
+        if (mainWindow && !mainWindow.isDestroyed()) mainWindow.webContents.executeJavaScript('window.sceneProject?.open()')
+      } },
       { label: '跑环记账', accelerator: 'Ctrl+R', click: () => {
         if (mainWindow && !mainWindow.isDestroyed()) mainWindow.webContents.executeJavaScript('window.ringProject?.open()')
       } },
@@ -86,6 +96,7 @@ app.on('second-instance', () => {
 })
 app.whenReady().then(() => {
   createWindow()
+  installToolboxTimers({ app, ipcMain, dialog, getWindow: () => mainWindow })
   updates = createUpdates({ app, updater: require('electron-updater').autoUpdater, dialog, getWindow: () => mainWindow })
   updates.start()
   app.on('before-quit', () => updates.stop())

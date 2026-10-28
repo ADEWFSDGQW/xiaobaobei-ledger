@@ -9,6 +9,9 @@
     root.projectNavigation?.select('accounting');
   }
   function open() {
+    root.treasureProject?.hide();
+    root.toolboxProject?.hide();
+    root.sceneProject?.hide();
     if (!page) create();
     root.ringProject?.hide();
     document.getElementById('app').hidden = true;

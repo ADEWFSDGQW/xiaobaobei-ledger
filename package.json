@@ -1,14 +1,15 @@
 {
   "name": "mh-five-accounting",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "小宝贝记账本：梦幻西游五开与跑环记账工具",
   "main": "electron/main.js",
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "test": "node check-ring-accounting.cjs && node check-startup.cjs && node check-startup-window.cjs && node check-updates.cjs",
+    "test": "node check-scene-accounting.cjs && node check-ring-accounting.cjs && node check-startup.cjs && node check-startup-window.cjs && node check-updates.cjs && node check-toolbox.cjs && node check-treasure.cjs && node check-treasure-accounting.cjs && node check-scene-skills.cjs && node check-item-prices.cjs && node check-treasure-prices.cjs && node check-treasure-icons.cjs",
     "package:win": "electron-packager . 小宝贝记账本 --platform=win32 --arch=x64 --out=release --overwrite --asar --icon=dist/assets/app-icon.ico --ignore=^/docs --ignore=^/release --ignore=^/.git --ignore=^/check- --win32metadata.ProductName=小宝贝记账本 --win32metadata.FileDescription=小宝贝记账本",
-    "dist:win": "electron-builder --win nsis --x64 --publish never"
+    "dist:win": "electron-builder --win nsis --x64 --publish never",
+    "test:treasure-ui": "electron check-treasure-ui.cjs"
   },
   "devDependencies": {
     "@electron/packager": "20.3.0",
@@ -27,7 +28,9 @@
     "files": [
       "dist/**/*",
       "electron/**/*",
-      "package.json"
+      "package.json",
+      "LICENSE",
+      "THIRD_PARTY_NOTICES.md"
     ],
     "asar": true,
     "publish": [

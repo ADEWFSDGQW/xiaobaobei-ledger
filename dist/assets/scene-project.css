@@ -1,0 +1,83 @@
+#scene-project{position:fixed;inset:42px 0 0;z-index:100;display:flex;flex-direction:column;overflow:hidden;min-width:0;min-height:0;box-sizing:border-box;padding:10px 14px;color:var(--text);background:var(--surface);font:13px 'Segoe UI','Microsoft YaHei UI',sans-serif}
+#scene-project[hidden]{display:none}
+#scene-project *{box-sizing:border-box}
+#scene-project>nav{display:flex;align-items:center;gap:7px;margin:0 0 9px;flex-shrink:0}
+#scene-project h1{font-size:16px;font-weight:600;margin:0 12px 0 0;white-space:nowrap}
+#scene-project h2{font-size:13px;font-weight:600;margin:0 0 8px}
+#scene-project button,#scene-project input,#scene-project select{font:inherit;color:var(--text);border:1px solid var(--border);border-radius:3px;padding:5px 8px;background:var(--panel);min-width:0}
+#scene-project button{cursor:pointer;background:var(--control);min-height:29px}
+#scene-project button:hover,#scene-project button[aria-pressed=true]{background:var(--active);border-color:var(--accent)}
+#scene-project button:focus-visible,#scene-project input:focus-visible,#scene-project select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#scene-project .scene-back{margin-left:auto}
+#scene-project>main{flex:1;min-height:0;min-width:0;overflow:auto}
+#scene-project.scene-run>main{display:flex;flex-direction:column;overflow:hidden}
+#scene-project .scene-split{display:flex;flex:1;min-height:0;min-width:0;gap:10px;overflow:hidden}
+#scene-project .scene-item-pane,#scene-project .scene-record-pane{display:flex;flex-direction:column;min-height:0;min-width:0;overflow:hidden;background:var(--panel);border:1px solid var(--border);border-radius:4px;padding:10px;margin:0}
+#scene-project .scene-item-pane{flex:0 0 34%}
+#scene-project .scene-record-pane{flex:1}
+#scene-project .scene-item-scroll{flex:1;min-height:0;min-width:0;overflow-y:auto;overflow-x:hidden;scrollbar-gutter:stable;padding-right:2px}
+#scene-project .scene-common-items,#scene-project .scene-pets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+#scene-project .scene-common-items button,#scene-project .scene-pets button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:0;min-height:59px;padding:5px 3px;text-align:center}
+#scene-project .scene-common-items button>span,#scene-project .scene-pet-label{display:block;max-width:100%;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px;line-height:14px}
+#scene-project .scene-item-image{width:24px;height:24px;object-fit:contain;flex-shrink:0;vertical-align:middle}
+#scene-project .scene-common-image{width:32px;height:32px}
+#scene-project .scene-pet-image{width:48px;height:48px}
+#scene-project .scene-pets button{min-height:76px}
+#scene-project .scene-pet-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:10px 0 7px}
+#scene-project .scene-pet-heading h2{margin:0;white-space:nowrap}
+#scene-project .scene-pet-heading select{width:170px;max-width:calc(100% - 56px);min-height:29px;font-size:12px}
+#scene-project .scene-hint{font-size:10px;line-height:1.5;color:var(--muted);margin:7px 0 10px}
+#scene-project .scene-record-pane>h2{flex-shrink:0;font-size:13px;margin:0 0 7px}
+#scene-project .scene-fields{display:flex;align-items:flex-end;flex-wrap:wrap;gap:8px}
+#scene-project .scene-fields label{display:flex;flex-direction:column;gap:4px;min-width:0;font-size:11px}
+#scene-project .scene-entry-form{display:grid;grid-template-columns:76px minmax(100px,1fr) 55px 82px auto;gap:7px;flex-shrink:0;margin:0 0 9px}
+#scene-project .scene-entry-form.scene-pet-entry{grid-template-columns:70px minmax(90px,1fr) 62px 48px 76px auto;gap:6px}
+#scene-project [data-skill-field][hidden]{display:none}
+#scene-project .scene-entry-form input,#scene-project .scene-entry-form select{width:100%;min-width:0;height:29px;padding:4px 6px;font-size:12px}
+#scene-project .scene-entry-form input[type=number]{appearance:textfield;-moz-appearance:textfield}
+#scene-project .scene-entry-form input[type=number]::-webkit-inner-spin-button,#scene-project .scene-entry-form input[type=number]::-webkit-outer-spin-button{appearance:none;margin:0}
+#scene-project .scene-entry-form button{height:29px;padding:4px 8px;white-space:nowrap;font-size:12px}
+#scene-project .scene-entry-form [data-action=cancel-row]{grid-column:-2}
+#scene-project .scene-entry-form .scene-legacy-kind{display:flex;align-items:center;height:29px;padding:4px 5px;border:1px solid var(--border);border-radius:3px;background:var(--control);color:var(--muted);font-size:11px;white-space:nowrap}
+#scene-project .scene-record-pane>.scene-scroll{flex:1;min-height:70px;min-width:0;margin:0;overflow:auto;border:1px solid var(--border);border-radius:3px}
+#scene-project .scene-scroll{overflow:auto;margin:9px 0;max-width:100%}
+#scene-project table{width:100%;border-collapse:collapse;text-align:left;font-size:12px}
+#scene-project th,#scene-project td{padding:6px;border-bottom:1px solid var(--border);box-sizing:border-box}
+#scene-project th{background:var(--heading);font-weight:500;white-space:nowrap}
+#scene-project .scene-record-pane table{table-layout:fixed;min-width:492px;font-size:11px}
+#scene-project .scene-record-pane th{position:sticky;top:0;z-index:1}
+#scene-project .scene-record-pane>.scene-scroll th:nth-child(1){width:50px}
+#scene-project .scene-record-pane>.scene-scroll th:nth-child(2){width:145px}
+#scene-project .scene-record-pane>.scene-scroll th:nth-child(3){width:56px}
+#scene-project .scene-record-pane>.scene-scroll th:nth-child(4){width:44px}
+#scene-project .scene-record-pane>.scene-scroll th:nth-child(5),#scene-project .scene-record-pane>.scene-scroll th:nth-child(6){width:67px}
+#scene-project .scene-record-pane>.scene-scroll th:nth-child(7){width:72px}
+#scene-project .scene-item-name{display:flex;align-items:center;gap:6px;min-width:0}
+#scene-project .scene-item-name>span{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#scene-project .scene-record-pane td button{min-height:24px;font-size:10px;padding:3px 5px;margin-right:3px}
+#scene-project .scene-empty{text-align:center;padding:12px 4px;color:var(--muted);font-size:12px;line-height:1.6}
+#scene-project .scene-bottom{display:flex;align-items:center;gap:8px;flex-shrink:0;margin-top:8px;padding-top:8px;border-top:1px solid var(--border)}
+#scene-project .scene-bottom>span{margin-right:auto;white-space:nowrap;font-size:12px}
+#scene-project .scene-bottom strong{font-size:16px;color:var(--positive);font-weight:600;margin-left:5px}
+#scene-project .scene-bottom .scene-loss{color:var(--negative)}
+#scene-project .scene-bottom button{white-space:nowrap;font-size:12px}
+#scene-project .scene-primary{border-color:var(--accent);background:var(--active);font-weight:600}
+#scene-project .scene-history-head{display:flex;align-items:center;gap:16px;padding:10px 0;font-size:12px}
+#scene-project .scene-history-head label{display:flex;align-items:center;gap:7px}
+#scene-project .scene-history-list{padding:0 12px;border:1px solid var(--border);border-radius:4px;background:var(--panel)}
+#scene-project .scene-history-record{padding:12px 0;border-bottom:1px solid var(--border)}
+#scene-project .scene-history-record:last-child{border-bottom:0}
+#scene-project summary{cursor:pointer}
+#scene-project .scene-history-record>summary{display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:12px}
+#scene-project .scene-history-record>summary strong{font-weight:500}
+#scene-project .scene-history-actions{display:flex;gap:7px;margin-top:8px}
+#scene-project .scene-backup{padding:16px;background:var(--panel);border:1px solid var(--border);border-radius:4px}
+#scene-project .scene-backup p{font-size:12px;color:var(--muted);line-height:1.7}
+#scene-project .scene-backup>div{display:flex;gap:8px;margin-top:12px}
+#scene-project .scene-skill-stats{flex-shrink:0;min-width:0;margin-top:7px;border:1px solid var(--border);border-radius:3px;background:var(--panel)}
+#scene-project .scene-skill-stats>summary{font-size:12px;padding:6px 8px;background:var(--heading)}
+#scene-project .scene-skill-scroll{overflow:auto;max-height:150px}
+#scene-project .scene-skill-scroll table{table-layout:auto;min-width:0;font-size:11px}
+#scene-project .scene-skill-scroll th{position:sticky;top:0;z-index:1}
+#scene-project .scene-skill-scroll th:first-child{width:45%}
+#scene-project .scene-history-head+.scene-skill-stats{margin:0 0 10px}

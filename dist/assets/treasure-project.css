@@ -1,0 +1,124 @@
+#treasure-project{height:calc(100vh - 42px);overflow:auto;padding:22px 24px 36px;box-sizing:border-box;color:var(--text);background:var(--surface);font:13px 'Segoe UI','Microsoft YaHei UI',sans-serif}#treasure-project[hidden]{display:none}#treasure-project header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}#treasure-project h1{font-size:24px;margin:4px 0;font-weight:650}#treasure-project h2{font-size:15px;margin:0 0 12px;font-weight:600}#treasure-project h2 small{font-size:12px;color:var(--muted);font-weight:400}#treasure-project p{line-height:1.65;margin:7px 0;color:var(--muted)}#treasure-project .tr-eyebrow{font-size:10px;letter-spacing:1.3px;color:var(--accent);font-weight:600}#treasure-project button,#treasure-project input,#treasure-project select{font:inherit;color:var(--text);border:1px solid var(--border);border-radius:4px;padding:7px 10px;background:var(--panel);box-sizing:border-box}#treasure-project button{background:var(--control);cursor:pointer;min-height:32px}#treasure-project button:hover,#treasure-project button[aria-pressed=true]{border-color:var(--accent);background:var(--active)}#treasure-project button:focus-visible,#treasure-project input:focus-visible,#treasure-project select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}#treasure-project nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:12px 0}#treasure-project nav>div{display:flex;gap:6px}#treasure-project .tr-modes button[aria-pressed=true]{font-weight:600}#treasure-project .tr-status{min-height:22px;color:var(--accent);line-height:1.5;padding:2px 0}#treasure-project .tr-error,#treasure-project .tr-negative{color:var(--negative)!important}#treasure-project section{background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:16px;margin:14px 0}#treasure-project .tr-section-head{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:8px}#treasure-project .tr-section-head h2{margin:0}#treasure-project .tr-pill{font-size:11px;color:var(--accent);background:var(--selected);border:1px solid var(--border);border-radius:20px;padding:4px 10px}#treasure-project .tr-metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:10px}#treasure-project .tr-metrics>div{background:var(--panel);border:1px solid var(--border);border-radius:5px;padding:13px 14px}#treasure-project .tr-metrics span{font-size:12px;color:var(--muted)}#treasure-project .tr-metrics strong{display:block;font-size:23px;font-weight:600;margin-top:8px;letter-spacing:-.3px;font-variant-numeric:tabular-nums}#treasure-project .tr-metrics strong small{font-size:12px;font-weight:400;color:var(--muted)}#treasure-project .tr-metrics>div:nth-child(4) strong{color:var(--positive)}#treasure-project .tr-kpis{display:flex;gap:20px;flex-wrap:wrap;padding:11px 3px 0;color:var(--muted);font-size:12px}#treasure-project .tr-kpis b{font-weight:500;color:var(--text);margin-left:5px}#treasure-project .tr-fields{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap}#treasure-project label:not(.tr-check):not(.tr-inline){display:flex;flex-direction:column;gap:6px;font-size:12px}#treasure-project .tr-fields input{width:152px;min-height:33px}#treasure-project input[data-field=notes]{width:270px}#treasure-project .tr-inline{display:flex;align-items:center;gap:8px;font-size:12px}#treasure-project .tr-hint{font-size:12px;line-height:1.7;margin-top:10px}#treasure-project .tr-quick{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:8px;margin:12px 0}#treasure-project .tr-quick button{text-align:left;background:var(--panel);min-height:59px;display:flex;flex-direction:column;justify-content:center;gap:5px}#treasure-project .tr-quick button:hover{background:var(--selected)}#treasure-project .tr-quick span{font-weight:600;font-size:12px}#treasure-project .tr-quick small{font-size:10px;color:var(--muted);white-space:normal}#treasure-project .tr-scroll{overflow:auto;width:100%;margin-top:10px}#treasure-project table{width:100%;border-collapse:collapse;text-align:left;font-size:12px}#treasure-project th{background:var(--heading);font-weight:500;white-space:nowrap}#treasure-project td,#treasure-project th{padding:9px;border-bottom:1px solid var(--border);vertical-align:middle}#treasure-project td>small{display:block;font-size:10px;color:var(--muted);margin-top:4px}#treasure-project td:first-child input{min-width:145px;width:175px}#treasure-project td input[type=number]{width:100px}#treasure-project .tr-check{display:flex;flex-direction:row;align-items:center;gap:5px;white-space:nowrap;font-size:12px}#treasure-project .tr-check input{width:15px;height:15px;padding:0}#treasure-project .tr-empty{text-align:center;color:var(--muted);padding:20px}#treasure-project details{margin:12px 0}#treasure-project summary{cursor:pointer;font-weight:500;line-height:1.7}#treasure-project .tr-add-more{border-top:1px dashed var(--border);padding-top:12px}#treasure-project .tr-add-more form,#treasure-project .tr-custom form{margin-top:12px}#treasure-project .tr-events{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}#treasure-project .tr-events b{color:var(--accent);margin-left:6px}#treasure-project .tr-event-list{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}#treasure-project .tr-event-list>span{display:inline-flex;align-items:center;gap:7px;background:var(--selected);padding:4px 5px 4px 10px;border-radius:4px;font-size:12px}#treasure-project .tr-event-list button{padding:1px 8px;min-height:25px}#treasure-project .tr-custom{border:1px dashed var(--border);border-radius:5px;padding:14px}#treasure-project .tr-custom-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}#treasure-project .tr-custom-list>span{font-size:12px;padding:5px;border:1px solid var(--border);border-radius:3px}#treasure-project .tr-custom-list small{color:var(--muted)}#treasure-project .tr-custom-list button{min-height:24px;padding:3px 6px;font-size:11px}#treasure-project .tr-bottom{display:flex;align-items:center;gap:10px;padding-top:8px}#treasure-project .tr-bottom>span{margin-right:auto;color:var(--muted);font-size:12px}#treasure-project .tr-primary{background:var(--active);border-color:var(--accent);font-weight:600;padding:9px 17px}#treasure-project .tr-history{padding:12px 0;border-bottom:1px solid var(--border)}#treasure-project .tr-history summary{display:flex;justify-content:space-between;gap:15px}#treasure-project .tr-history summary strong{font-size:12px;font-weight:500;color:var(--positive)}#treasure-project .tr-actions{display:flex;gap:10px;margin-top:14px}
+
+/* Compact entry layout: only price and quantity stay above the item list. */
+#treasure-project{padding:10px 14px 18px}
+#treasure-project nav{justify-content:flex-start;align-items:center;gap:12px;margin:0 0 8px;flex-wrap:nowrap}
+#treasure-project nav h1{font-size:16px;margin:0 5px 0 0;white-space:nowrap}
+#treasure-project nav button{min-height:28px;padding:5px 10px;font-size:12px;white-space:nowrap}
+#treasure-project nav .tr-back{margin-left:auto}
+#treasure-project .tr-status:empty{display:none}
+#treasure-project .tr-status{min-height:18px;padding:1px 0;font-size:12px}
+#treasure-project .tr-cost-bar{display:flex;align-items:center;gap:20px;min-height:44px;padding:6px 10px;box-sizing:border-box;border:1px solid var(--border);border-radius:4px;background:var(--panel)}
+#treasure-project .tr-cost-bar .tr-inline{gap:8px;white-space:nowrap;font-size:13px}
+#treasure-project .tr-cost-bar input{width:110px;min-height:29px;padding:4px 7px}
+#treasure-project .tr-total{display:flex;align-items:center;gap:10px;white-space:nowrap}
+#treasure-project .tr-total output{font-size:17px;font-weight:600;min-width:115px;color:var(--accent);font-variant-numeric:tabular-nums}
+#treasure-project .tr-editing{font-size:12px;color:var(--accent);margin-left:auto}
+#treasure-project .tr-extra-meta{margin:5px 0 7px;padding:0 2px;font-size:12px}
+#treasure-project .tr-extra-meta summary{color:var(--muted)}
+#treasure-project .tr-extra-meta .tr-fields{margin-top:8px}
+#treasure-project .tr-extra-meta .tr-hint{margin:7px 0}
+#treasure-project.tr-run section{padding:10px;margin:8px 0;border-radius:4px}
+#treasure-project.tr-run h2{font-size:13px;margin-bottom:7px}
+#treasure-project.tr-run .tr-section-head{margin-bottom:6px}
+#treasure-project.tr-run .tr-section-head select{padding:4px 7px;font-size:12px}
+#treasure-project.tr-run .tr-quick{grid-template-columns:repeat(auto-fill,minmax(122px,1fr));gap:5px;margin:5px 0 0}
+#treasure-project.tr-run .tr-quick button{min-height:38px;padding:4px 8px;gap:2px;border-radius:3px}
+#treasure-project.tr-run .tr-quick span{font-size:12px;font-weight:500}
+#treasure-project.tr-run .tr-quick small{font-size:9px;line-height:1.2}
+#treasure-project.tr-run .tr-scroll{margin-top:5px}
+#treasure-project.tr-run td,#treasure-project.tr-run th{padding:6px}
+#treasure-project.tr-run td input,#treasure-project.tr-run td select{padding:4px 7px}
+#treasure-project.tr-run .tr-empty{padding:12px}
+#treasure-project.tr-run .tr-add-more{padding-top:7px;margin:7px 0 0}
+#treasure-project.tr-run .tr-add-more summary,#treasure-project.tr-run .tr-custom summary,#treasure-project.tr-run .tr-events-panel summary{font-size:12px}
+#treasure-project.tr-run .tr-events-panel,#treasure-project.tr-run .tr-custom{border:1px solid var(--border);border-radius:4px;padding:7px 10px;margin:7px 0;background:var(--panel)}
+#treasure-project.tr-run .tr-events{margin-top:7px;gap:5px}
+#treasure-project.tr-run .tr-events button{padding:4px 8px;min-height:28px;font-size:12px}
+#treasure-project.tr-run .tr-bottom{padding-top:4px;gap:8px}
+#treasure-project.tr-run .tr-bottom button{min-height:30px;padding:6px 12px;font-size:12px}
+/* Two-pane entry view; history and backup retain the full-width page flow. */
+#treasure-project.tr-run{display:flex;flex-direction:column;overflow:hidden;min-height:0;padding-bottom:10px}
+#treasure-project.tr-run[hidden]{display:none}
+#treasure-project.tr-run>nav,#treasure-project.tr-run>.tr-status{flex-shrink:0}
+#treasure-project.tr-run>main{display:flex;flex-direction:column;flex:1;min-height:0;min-width:0;overflow:hidden}
+#treasure-project.tr-run .tr-cost-bar{flex-shrink:0}
+#treasure-project.tr-run .tr-extra-meta{flex-shrink:0;max-height:180px;overflow:auto}
+#treasure-project.tr-run .tr-split{display:flex;flex:1;min-width:0;min-height:0;gap:10px;overflow:hidden;width:100%}
+#treasure-project.tr-run .tr-item-pane,#treasure-project.tr-run .tr-record-pane{display:flex;flex-direction:column;min-height:0;min-width:0;overflow:hidden;margin:0;padding:9px;box-sizing:border-box}
+#treasure-project.tr-run .tr-item-pane{flex:0 0 34%}
+#treasure-project.tr-run .tr-record-pane{flex:1}
+#treasure-project.tr-run .tr-item-pane>.tr-section-head{flex-shrink:0;gap:6px;margin-bottom:5px}
+#treasure-project.tr-run .tr-item-pane>.tr-section-head h2{font-size:12px;white-space:nowrap}
+#treasure-project.tr-run .tr-item-pane>.tr-section-head .tr-inline{font-size:11px;gap:4px}
+#treasure-project.tr-run .tr-item-pane [data-quick-source]{font-size:11px;width:88px;padding:4px}
+#treasure-project.tr-run .tr-item-scroll{flex:1;min-height:0;min-width:0;overflow-x:hidden;overflow-y:auto;scrollbar-gutter:stable;padding-right:2px}
+#treasure-project.tr-run .tr-item-pane .tr-quick{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:0}
+#treasure-project.tr-run .tr-item-pane .tr-quick button{min-width:0;min-height:39px;padding:4px 5px;overflow:hidden}
+#treasure-project.tr-run .tr-item-pane .tr-quick span{font-size:11px;display:block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#treasure-project.tr-run .tr-item-pane .tr-quick small{font-size:9px}
+#treasure-project.tr-run .tr-item-pane .tr-custom{margin:8px 0 0;padding:7px;border-style:dashed}
+#treasure-project.tr-run .tr-item-pane .tr-custom .tr-fields{display:grid;grid-template-columns:1fr;gap:7px}
+#treasure-project.tr-run .tr-item-pane .tr-custom input,#treasure-project.tr-run .tr-item-pane .tr-custom select{width:100%;min-width:0}
+#treasure-project.tr-run .tr-item-pane .tr-custom-list>span{max-width:100%;overflow-wrap:anywhere}
+#treasure-project.tr-run .tr-record-pane>h2{flex-shrink:0;margin:0 0 6px;font-size:13px}
+#treasure-project.tr-run .tr-record-pane>.tr-scroll{flex:1;min-height:70px;min-width:0;overflow:auto;margin:0;border:1px solid var(--border);border-radius:3px}
+#treasure-project.tr-run .tr-record-pane table{table-layout:fixed;min-width:594px;width:100%;font-size:11px}
+#treasure-project.tr-run .tr-record-pane th,#treasure-project.tr-run .tr-record-pane td{box-sizing:border-box;padding:5px;overflow:hidden}
+#treasure-project.tr-run .tr-record-pane th{position:sticky;top:0;z-index:1}
+#treasure-project.tr-run .tr-record-pane th:nth-child(1){width:124px}
+#treasure-project.tr-run .tr-record-pane th:nth-child(2){width:82px}
+#treasure-project.tr-run .tr-record-pane th:nth-child(3){width:48px}
+#treasure-project.tr-run .tr-record-pane th:nth-child(4){width:66px}
+#treasure-project.tr-run .tr-record-pane th:nth-child(5){width:68px}
+#treasure-project.tr-run .tr-record-pane th:nth-child(6){width:62px}
+#treasure-project.tr-run .tr-record-pane th:nth-child(7){width:44px}
+#treasure-project.tr-run .tr-record-pane td:first-child input{width:100%;min-width:0;max-width:100%}
+#treasure-project.tr-run .tr-record-pane td input[type=number],#treasure-project.tr-run .tr-record-pane td select{width:100%;min-width:0;max-width:100%;font-size:11px;padding:4px;min-height:26px}
+#treasure-project.tr-run .tr-record-pane td input[type=number]{appearance:textfield;-moz-appearance:textfield}
+#treasure-project.tr-run .tr-record-pane td input[type=number]::-webkit-inner-spin-button,#treasure-project.tr-run .tr-record-pane td input[type=number]::-webkit-outer-spin-button{appearance:none;margin:0}
+#treasure-project.tr-run .tr-record-pane td>small{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#treasure-project.tr-run .tr-record-pane .tr-check{font-size:11px;gap:3px}
+#treasure-project.tr-run .tr-record-pane .tr-check input{width:13px;height:13px;flex-shrink:0}
+#treasure-project.tr-run .tr-record-pane td [data-action=remove-row]{padding:3px 4px;min-height:25px;font-size:10px;white-space:nowrap}
+#treasure-project.tr-run .tr-record-tools{flex-shrink:0;min-height:0;max-height:44%;overflow:auto;margin-top:6px;scrollbar-gutter:stable}
+#treasure-project.tr-run .tr-record-tools .tr-add-more{margin:0;padding:0 1px 4px;border:0}
+#treasure-project.tr-run .tr-record-tools .tr-events-panel{margin:3px 0 0;padding:5px 7px}
+#treasure-project.tr-run .tr-record-tools .tr-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;align-items:end}
+#treasure-project.tr-run .tr-record-tools .tr-fields input,#treasure-project.tr-run .tr-record-tools .tr-fields select{width:100%;min-width:0;min-height:28px;font-size:11px}
+#treasure-project.tr-run .tr-record-tools .tr-fields .tr-check input{width:14px;min-height:14px}
+#treasure-project.tr-run .tr-record-tools .tr-hint{font-size:10px;line-height:1.5;margin:6px 0}
+#treasure-project.tr-run .tr-record-pane>.tr-bottom{flex-shrink:0;border-top:1px solid var(--border);margin-top:7px;padding-top:7px}
+#treasure-project.tr-run .tr-record-pane>.tr-bottom>span{font-size:10px}
+#treasure-project.tr-run .tr-record-pane>.tr-bottom button{font-size:11px;padding:6px 9px;white-space:nowrap}
+/* Item pictures keep labels and the compact two-pane entry layout. */
+#treasure-project .tr-item-image{width:24px;height:24px;object-fit:contain;flex-shrink:0;vertical-align:middle}
+#treasure-project.tr-run .tr-item-pane .tr-quick{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+#treasure-project.tr-run .tr-item-pane .tr-quick button{min-height:72px;align-items:center;justify-content:center;text-align:center;padding:5px 3px;gap:3px}
+#treasure-project.tr-run .tr-item-pane .tr-quick .tr-quick-image{width:34px;height:34px;display:block}
+#treasure-project.tr-run .tr-item-pane .tr-quick span{width:100%;font-size:10px;line-height:13px}
+#treasure-project.tr-run .tr-item-pane .tr-quick small{font-size:8px;line-height:10px;white-space:normal}
+#treasure-project .tr-name-cell{display:flex;align-items:center;gap:5px;min-width:0}
+#treasure-project .tr-name-text{flex:1;min-width:0;overflow:hidden}
+#treasure-project .tr-name-text>small{display:block;font-size:9px;color:var(--muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#treasure-project .tr-custom-image{width:18px;height:18px;margin-right:4px}
+#treasure-project .tr-custom-list>span{display:inline-flex;align-items:center;gap:3px;flex-wrap:wrap}
+#treasure-project.tr-run .tr-record-pane table{min-width:614px}
+#treasure-project.tr-run .tr-record-pane th:nth-child(1){width:144px}
+#treasure-project.tr-run .tr-record-pane .tr-name-text input{width:100%;min-width:0;padding:4px;font-size:11px}
+/* Price groups are snapshots of recorded lines, never live repricing. */
+#treasure-project .tr-quick-group{margin:0 0 12px}
+#treasure-project .tr-quick-group h3{font-size:11px;font-weight:600;color:var(--muted);margin:0 0 6px;padding:4px 0;border-bottom:1px solid var(--border)}
+#treasure-project .tr-quick-group[data-quick-group=fixed] h3{color:var(--accent)}
+#treasure-project .tr-price-group>td{background:var(--selected);padding:6px 8px!important}
+#treasure-project [data-price-subtotal]{display:flex;align-items:center;gap:8px 12px;flex-wrap:wrap;font-size:11px;line-height:1.6}
+#treasure-project [data-price-subtotal]>strong{font-size:11px;font-weight:600;margin-right:auto;white-space:nowrap}
+#treasure-project [data-price-subtotal]>span{white-space:nowrap;color:var(--muted)}
+#treasure-project [data-price-subtotal] b{font-weight:500;color:var(--text);font-variant-numeric:tabular-nums}
+#treasure-project .tr-price-summary{display:flex;flex-direction:column;gap:5px;margin:12px 0 0;padding:8px 10px;background:var(--selected);border-radius:4px}
+#treasure-project .tr-price-summary [data-price-subtotal]>strong{margin-right:10px;min-width:78px}
+#treasure-project .tr-history-parts{display:block;color:var(--muted);font-weight:400;font-size:11px;margin-top:3px}
+#treasure-project.tr-run .tr-price-group>td{height:32px}
+#treasure-project.tr-run .tr-price-group [data-price-subtotal]{gap:4px 9px;font-size:10px;line-height:1.5}
+#treasure-project.tr-run .tr-price-group [data-price-subtotal]>strong{font-size:10px}
+#treasure-project.tr-run .tr-bottom>span{line-height:1.6;font-variant-numeric:tabular-nums}

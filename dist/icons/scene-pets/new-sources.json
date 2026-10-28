@@ -1,0 +1,368 @@
+{
+  "source": "叶子猪梦幻西游召唤兽染色图鉴",
+  "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+  "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+  "downloadedAt": "2026-10-27T12:08:47.621Z",
+  "items": [
+    {
+      "id": "12004",
+      "name": "阿宝",
+      "src": "./icons/scene-pets/12004.png",
+      "imageUrl": "http://i1.cdn.yzz.cn/pub/imgx2022/06/24/588_135853_d38ff.png",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "普通",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "2de0ca8bf4d66a843d6b2188a385912ab274c6731f4ecd033cc22033c1935601",
+      "width": 404,
+      "height": 384,
+      "bytes": 58683,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 25,
+        "y": 76,
+        "width": 145,
+        "height": 140
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12006",
+      "name": "有苏鸩",
+      "src": "./icons/scene-pets/12006.png",
+      "imageUrl": "http://i1.cdn.yzz.cn/pub/imgx2022/06/24/588_163707_d38ff.png",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "普通",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "b01c2e0073378c8f881ca3243971409b91c8d38c5ef5d37035a80c652351bbad",
+      "width": 398,
+      "height": 384,
+      "bytes": 55675,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 25,
+        "y": 78,
+        "width": 140,
+        "height": 135
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12008",
+      "name": "涂山瞳",
+      "src": "./icons/scene-pets/12008.png",
+      "imageUrl": "http://i2.cdn.yzz.cn/pub/imgx2022/06/24/588_150621_d8a1e.png",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "普通（HTML标题误作涂山曈，数据脚本名称为涂山瞳）",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "9fdc0bd749347201cd219b9272b628bdce87c6a13fef4b80d1cbb65d7cfc9a6f",
+      "width": 403,
+      "height": 386,
+      "bytes": 58662,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 25,
+        "y": 75,
+        "width": 145,
+        "height": 140
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12010",
+      "name": "觉醒涂山雪",
+      "src": "./icons/scene-pets/12010.png",
+      "imageUrl": "http://i1.cdn.yzz.cn/pub/imgx2022/06/24/588_160615_4dad8.png",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "普通，非未觉醒涂山雪",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "1ba3510f3519c03e8423d41f7cfede18347735a026b72c465e549466b76eb0e0",
+      "width": 404,
+      "height": 385,
+      "bytes": 67084,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 18,
+        "y": 60,
+        "width": 164,
+        "height": 158
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12038",
+      "name": "自在心猿",
+      "src": "./icons/scene-pets/12038.png",
+      "imageUrl": "https://xyq.yzz.cn/special/2024tmzl/images/s3_role_1.png",
+      "sourcePage": "https://xyq.yzz.cn/special/2024tmzl/",
+      "dataSource": "https://xyq.yzz.cn/special/2024tmzl/",
+      "sourceLabel": "资料片专题 low_img 普通立绘，完整飘带",
+      "variant": "普通",
+      "representation": "独立原始立绘，未经裁剪或编辑",
+      "sha256": "fa6c12daec8920fc2ac1fe01f8dda909ce0e661ae249b1fa5c2025c66a56aa62",
+      "width": 721,
+      "height": 679,
+      "bytes": 525047,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 721,
+        "height": 679
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12040",
+      "name": "炼丹童子",
+      "src": "./icons/scene-pets/12040.png",
+      "imageUrl": "http://xyq.yzz.cn/special/zhstj/image/202501/ldtz-pt-1.jpg",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "普通",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "b82e0c0260af0a39c29d59c4cbf6af9a47e964a882779a25fa7fd411fae58321",
+      "width": 396,
+      "height": 380,
+      "bytes": 63752,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 6,
+        "y": 80,
+        "width": 170,
+        "height": 116
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12061",
+      "name": "五行山神（金）",
+      "src": "./icons/scene-pets/12061.png",
+      "imageUrl": "http://xyq.yzz.cn/special/zhstj/image/202501/wxssj-pt-1.jpg",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "普通，金属性独立图",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "148e6a5f66073b9ceb711265a6baa9d378d9f054e5bb0e1bc42747513d12a20c",
+      "width": 396,
+      "height": 374,
+      "bytes": 66378,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 30,
+        "y": 60,
+        "width": 135,
+        "height": 138
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12062",
+      "name": "五行山神（木）",
+      "src": "./icons/scene-pets/12062.png",
+      "imageUrl": "http://xyq.yzz.cn/special/zhstj/image/202501/wxssm-pt-1.jpg",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "普通，木属性独立图",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "e5de20164b719dff9a91c48167aca21138dd82ce6bd2e424498103260341c24a",
+      "width": 387,
+      "height": 374,
+      "bytes": 64375,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 27,
+        "y": 59,
+        "width": 135,
+        "height": 134
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12063",
+      "name": "五行山神（水）",
+      "src": "./icons/scene-pets/12063.png",
+      "imageUrl": "http://xyq.yzz.cn/special/zhstj/image/202501/wxsss-pt-1.jpg",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "普通，水属性独立图",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "8593cd58a0323cdee241e343ec7789f6ef2aecbe5d4a1f5e0c0c22eaf3597bcb",
+      "width": 391,
+      "height": 373,
+      "bytes": 66046,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 30,
+        "y": 58,
+        "width": 135,
+        "height": 137
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12064",
+      "name": "五行山神（火）",
+      "src": "./icons/scene-pets/12064.png",
+      "imageUrl": "http://xyq.yzz.cn/special/zhstj/image/202501/wxssh-pt-1.jpg",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "普通，火属性独立图",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "f7f724ff040bd5ac578e1eefb9637604efc4885f51fc774f2cb37bbd1570cebb",
+      "width": 387,
+      "height": 378,
+      "bytes": 66731,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 30,
+        "y": 59,
+        "width": 135,
+        "height": 137
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12065",
+      "name": "五行山神（土）",
+      "src": "./icons/scene-pets/12065.png",
+      "imageUrl": "http://xyq.yzz.cn/special/zhstj/image/202501/wxsst-pt-1.jpg",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "普通，土属性独立图",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "d328b8f96d584ca1ff1ee9a2ed1261b6093e287def416f38dffb90e6bf83366d",
+      "width": 397,
+      "height": 374,
+      "bytes": 65289,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 30,
+        "y": 58,
+        "width": 135,
+        "height": 137
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12071",
+      "name": "司辰侍者（过去）",
+      "src": "./icons/scene-pets/12071.png",
+      "imageUrl": "http://xyq.yzz.cn/special/zhstj/image/202501/scsz-pt-1.jpg",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "原图标题明确司辰侍者（过去）；数据脚本过去＆未来合并标签不准确，按图内标题核对",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "65b79cfea56d50cfd54660735524737817a1311e490f72d5e703c37f635a7539",
+      "width": 393,
+      "height": 377,
+      "bytes": 66537,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 25,
+        "y": 60,
+        "width": 140,
+        "height": 137
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12079",
+      "name": "天狗（人形）",
+      "src": "./icons/scene-pets/12079.png",
+      "imageUrl": "http://xyq.yzz.cn/special/zhstj/image/202501/tg_rx-pt-1.jpg",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "人形，普通1，非兽形",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "3f1666f32b60089e16728cfd28b7fea26470bafa6e077a7e43fe5ff8f2e3b1ee",
+      "width": 398,
+      "height": 375,
+      "bytes": 65773,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 27,
+        "y": 58,
+        "width": 140,
+        "height": 142
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12081",
+      "name": "大力鬼王",
+      "src": "./icons/scene-pets/12081.png",
+      "imageUrl": "http://xyq.yzz.cn/special/zhstj/image/202501/dlgw-pt-1.jpg",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "普通，非大力金刚",
+      "variant": "普通",
+      "representation": "原始资料图片，未经裁剪或编辑",
+      "sha256": "7610d4206ba90920f8e746df6917f88a93f44dcd87876e4c7b360cce14b7628e",
+      "width": 392,
+      "height": 377,
+      "bytes": 61963,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 25,
+        "y": 78,
+        "width": 135,
+        "height": 118
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    },
+    {
+      "id": "12082",
+      "name": "无相金蝉",
+      "src": "./icons/scene-pets/12082.png",
+      "imageUrl": "http://xyq.yzz.cn/special/zhstj/image/202501/wxjc.jpg",
+      "sourcePage": "http://xyq.yzz.cn/special/zhstj/",
+      "dataSource": "http://xyq.yzz.cn/special/zhstj/js/data_v2.js",
+      "sourceLabel": "图鉴无相金蝉列表原图；普通详情URL失效，使用同条目原始图",
+      "variant": "普通",
+      "representation": "独立原始立绘，未经裁剪或编辑",
+      "sha256": "8420c014031c19976528569dc4c4b239fdcf14c43f2b4bf4a1e28214af0d3f2b",
+      "width": 782,
+      "height": 785,
+      "bytes": 402599,
+      "visualVerified": true,
+      "renderCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 782,
+        "height": 785
+      },
+      "visualReviewNote": "已查看原始图片核对图内名称/资料页名称与形态；renderCrop仅供界面CSS取景，原始图片字节未改。"
+    }
+  ],
+  "missing": [
+    {
+      "id": "12039",
+      "name": "司辰侍者（未来）",
+      "reason": "叶子猪标注“过去＆未来”的普通详情图内标题实际为过去；3DM未来页面的普通图与过去页重复同造型，未能独立确认未来，故不误配。"
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "id": "12039",
+      "sourcePage": "https://ol.3dmgame.com/gl/298451_176.html",
+      "imageUrl": "https://olimg.3dmgame.com/uploads/images/raiders/2025/0113/1736752610959.jpg",
+      "reason": "未来页面图与过去页同造型，独立未来形态未确认，不采用。"
+    }
+  ]
+}

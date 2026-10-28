@@ -2,8 +2,6 @@ name: Windows auto-update release
 on:
   workflow_dispatch:
   push:
-    branches: [main]
-    paths: ['.github/workflows/windows.yml']
     tags: ['v*']
 permissions:
   contents: write
@@ -44,7 +42,7 @@ jobs:
           $releaseTag = "v$version"
           gh release view $releaseTag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $releaseTag --target $env:GITHUB_SHA --title "小宝贝记账本 $releaseTag · 自动更新版" --notes '首次安装 Setup.exe 一次。此后后台检查并下载新版，正常关闭软件后自动安装，下次打开生效。保留原有账目与价格设置。旧 ZIP 版需要安装本版才能启用自动更新。'
+            gh release create $releaseTag --target $env:GITHUB_SHA --title "小宝贝记账本 $releaseTag · 技能数与共用价格版" --notes-file RELEASE_NOTES.md
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
           $assets = @(Get-ChildItem installer -File | Where-Object { $_.Extension -in '.exe','.blockmap' -or $_.Name -eq 'latest.yml' } | ForEach-Object FullName)

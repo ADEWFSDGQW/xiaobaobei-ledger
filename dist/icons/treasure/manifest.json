@@ -1,0 +1,606 @@
+{
+  "generatedBy": "build-treasure-icons.cjs",
+  "source": "Existing dist/icons/current app inline Om dictionary plus two verified unmodified PC-game item JPEGs from the Sina official-cooperation section. Other missing art remains labelled generic.",
+  "inspectedRelatedAssets": "../ui-work/dist/icons matches the same 79-image set; no extra matching original game pictures in local backup assets",
+  "extracted": [],
+  "reused": [
+    {
+      "name": "60武器",
+      "src": "./icons/60武器.png",
+      "kind": "asset",
+      "sha256": "3818debc16481df65a1abc77bae73ee8b3fe89c568bde2a4ac0d2bd69b123f84"
+    },
+    {
+      "name": "60防具",
+      "src": "./icons/60防具.png",
+      "kind": "asset",
+      "sha256": "60bf3868efd30afbb14a565426bdcbac2b6d40c726497f82507e0e6f17dd8427"
+    },
+    {
+      "name": "70武器",
+      "src": "./icons/70武器.png",
+      "kind": "asset",
+      "sha256": "408f3d5713550a170734d2adffd6e3d83aaf9aec5385512ca0209ab20c79bebf"
+    },
+    {
+      "name": "70防具",
+      "src": "./icons/70防具.png",
+      "kind": "asset",
+      "sha256": "81965c7c2c6f8f90ef677f4e9a4c7e70978332c931b957cbff0fc95466dac955"
+    },
+    {
+      "name": "80武器",
+      "src": "./icons/80武器.png",
+      "kind": "asset",
+      "sha256": "ffb799df91cba63a20d75db12cf53bfbaf1de07c4c8e014c40a1ed0e77978367"
+    },
+    {
+      "name": "80防具",
+      "src": "./icons/80防具.png",
+      "kind": "asset",
+      "sha256": "8547008a84229f6e5f9cf8bc364f49297c710227b39f6e6d8bcbd636b59f4526"
+    },
+    {
+      "name": "feicui",
+      "src": "./icons/feicui.PNG",
+      "kind": "asset",
+      "sha256": "f55fd409aa4505a2f9df73c1dd16b4af5f30ce3449875ae7e47f8b46208c1f3d"
+    },
+    {
+      "name": "guangmang",
+      "src": "./icons/guangmang.png",
+      "kind": "asset",
+      "sha256": "b76d8dcf646e25dab6cb590cbf0ae494654d8de24fbee15974da1eced357fa7f"
+    },
+    {
+      "name": "heibao",
+      "src": "./icons/heibao.png",
+      "kind": "asset",
+      "sha256": "bc1c9fe4de9a44758a169872faa20a8dc28af0aba459c8a95505f1cf3175ff70"
+    },
+    {
+      "name": "hongbaoshi",
+      "src": "./icons/hongbaoshi.png",
+      "kind": "asset",
+      "sha256": "c99e2217a2161fa8d6a7b9cb0758db46663184816b60089f6b5d6edc644d2dc9"
+    },
+    {
+      "name": "hongmanao",
+      "src": "./icons/hongmanao.png",
+      "kind": "asset",
+      "sha256": "3f75b5217a3d32d3d9311afe34aad96c2fa64365230dbb13327c5aa9ceac6acf"
+    },
+    {
+      "name": "huangbaoshi",
+      "src": "./icons/huangbaoshi.png",
+      "kind": "asset",
+      "sha256": "52f6d43ef08eea7d93e9a0aefc9bc7fc51a60af6c1147f6e2ce5a62dbff5b65d"
+    },
+    {
+      "name": "lanbaoshi",
+      "src": "./icons/lanbaoshi.png",
+      "kind": "asset",
+      "sha256": "f91d2fe2c493cb92387bd42ab5c9427543f4919a52f6baa5ce28b834f3114486"
+    },
+    {
+      "name": "lvbaoshi",
+      "src": "./icons/lvbaoshi.png",
+      "kind": "asset",
+      "sha256": "ea4db9a69eb94e2522a23e5c53040f762e7640bd5e856e4eadcb8f44c92c3fd9"
+    },
+    {
+      "name": "sheli",
+      "src": "./icons/sheli.png",
+      "kind": "asset",
+      "sha256": "a59aaa0fbb958656b48ad8ded5eca4fe21095e77e836f678ffe027f801e9c5cc"
+    },
+    {
+      "name": "shenmi",
+      "src": "./icons/shenmi.png",
+      "kind": "asset",
+      "sha256": "dbe37d6e754f080247b0c333ed37cdeb56a341235e25e0f1c25dc4b0b2d60001"
+    },
+    {
+      "name": "taiyang",
+      "src": "./icons/taiyang.png",
+      "kind": "asset",
+      "sha256": "bfaaa5812b89fa8e229739c92670b43ab3d7c14869adccd30b06dacd84cbb80a"
+    },
+    {
+      "name": "yueliang",
+      "src": "./icons/yueliang.png",
+      "kind": "asset",
+      "sha256": "584f8f0412ac334a1a206c0447e9f09fcea782dd5a6d6dfb4002622c2ffe4073"
+    },
+    {
+      "name": "上古锻造图册",
+      "src": "./icons/上古锻造图册.png",
+      "kind": "asset",
+      "sha256": "251eab46ec78a390b64b8ccfbddd605ca5619c92f985b532863ddb0f3b3eb5cc"
+    },
+    {
+      "name": "九转金丹",
+      "src": "./icons/九转金丹.png",
+      "kind": "asset",
+      "sha256": "f083425f11c28c3e9511f59a0ab8eb4b2edfde79c6c4566e9aac812bb4410732"
+    },
+    {
+      "name": "五色灵尘",
+      "src": "./icons/五色灵尘.png",
+      "kind": "asset",
+      "sha256": "b15c0db5048f13b04899dbe56a65a79148639a7833014042196339fd46d803ce"
+    },
+    {
+      "name": "仙露小丸子",
+      "src": "./icons/仙露小丸子.png",
+      "kind": "asset",
+      "sha256": "e53d5d06254657847f0f06649f8d0fff27d6af9e8b1feaa5dd8f805412d4915e"
+    },
+    {
+      "name": "低级兽诀",
+      "src": "./icons/低级兽诀.png",
+      "kind": "asset",
+      "sha256": "c07b7bc0183aef8edd2b7247e74ba2b0039c18ef3170e0bf990b7dca57226842"
+    },
+    {
+      "name": "修炼果",
+      "src": "./icons/修炼果.png",
+      "kind": "asset",
+      "sha256": "c61af97f3855250e88d1892a516d4d28f92e62064fa6571d78b6fedbbdad69d8"
+    },
+    {
+      "name": "储灵袋",
+      "src": "./icons/储灵袋.png",
+      "kind": "asset",
+      "sha256": "a301ce7b62651abcd0fd1def0ee403aba13a2d47af4ff45a117956a1d3997d36"
+    },
+    {
+      "name": "元灵晶石",
+      "src": "./icons/元灵晶石.png",
+      "kind": "asset",
+      "sha256": "22643e93c7e788edcd2f5815f96065ca2750ee36aa11f98fb07430f5be7700f6"
+    },
+    {
+      "name": "光芒石",
+      "src": "./icons/光芒石.png",
+      "kind": "asset",
+      "sha256": "20415120304e9f91500e69a007057e49f1e26fdecb827f4a4d99cf79a899c992"
+    },
+    {
+      "name": "其他",
+      "src": "./icons/其他.png",
+      "kind": "asset",
+      "sha256": "a0e5ce72bdc45512afb56aee885763928c40c058bc458478de01bfaf176872d1"
+    },
+    {
+      "name": "净瓶玉露",
+      "src": "./icons/净瓶玉露.png",
+      "kind": "asset",
+      "sha256": "fb98a14b87960dccc074fcc2b68b52cd6e641a56cb1239df39236f483b08be35"
+    },
+    {
+      "name": "变身卡",
+      "src": "./icons/变身卡.png",
+      "kind": "asset",
+      "sha256": "c27dcfbb425fe0e2a4421ea03893189962b534a57eb15265c941f1c3a1b8b6fd"
+    },
+    {
+      "name": "召唤兽内丹",
+      "src": "./icons/召唤兽内丹.png",
+      "kind": "asset",
+      "sha256": "ba292d104a1f655edceb05183c5c5e9f6e4346518989fbb028c218875791d630"
+    },
+    {
+      "name": "唢呐",
+      "src": "./icons/唢呐.png",
+      "kind": "asset",
+      "sha256": "3915883e19b3a097f2728e1d17b5db3526a0f36ed4dd56d75a33aa8b89915641"
+    },
+    {
+      "name": "夜光珠",
+      "src": "./icons/夜光珠.png",
+      "kind": "asset",
+      "sha256": "ae0cadb64890e4bada2fdb90b6874c3fb47b983898d4d5af6d6315ff0b47286f"
+    },
+    {
+      "name": "太阳石",
+      "src": "./icons/太阳石.png",
+      "kind": "asset",
+      "sha256": "a2784d20bc8debb8380de4c48f005eb656bde386dd6396ccb3cbd01159655b38"
+    },
+    {
+      "name": "如意丹",
+      "src": "./icons/如意丹.png",
+      "kind": "asset",
+      "sha256": "03b4398398ac0cbc37d5f00197b1b3096547ea446ef9f58a1c667b4923bb161b"
+    },
+    {
+      "name": "定魂珠",
+      "src": "./icons/定魂珠.png",
+      "kind": "asset",
+      "sha256": "38851058e1d02433c41b43eea3f0394dfb9efcfbd7ad686c7307dd5d99a90700"
+    },
+    {
+      "name": "康乃馨",
+      "src": "./icons/康乃馨.png",
+      "kind": "asset",
+      "sha256": "aa54162be9d3f1c1fd3dbdeaff56b5112b94b9e80cffff3190fe5bb6a3bf7220"
+    },
+    {
+      "name": "强化石",
+      "src": "./icons/强化石.png",
+      "kind": "asset",
+      "sha256": "e73d48ae95a9f8aed99114b975387498ee50da78fa1a993b58653927cca7c297"
+    },
+    {
+      "name": "归墟之证",
+      "src": "./icons/归墟之证.png",
+      "kind": "asset",
+      "sha256": "5144ffea151313f4c6158e7d246d3144befb37c32db060c50725954fa24140f1"
+    },
+    {
+      "name": "彩果",
+      "src": "./icons/彩果.png",
+      "kind": "asset",
+      "sha256": "d6b8a86c1cdf1d935f4951b0a429c411b1333d5a5039d35ff4079ff47d1b4516"
+    },
+    {
+      "name": "摇钱树树苗",
+      "src": "./icons/摇钱树树苗.png",
+      "kind": "asset",
+      "sha256": "c6af95ca126f4bb28a3a11c35ce6b536873da2c42d25fd92c718c121a62628f6"
+    },
+    {
+      "name": "星辉石",
+      "src": "./icons/星辉石.png",
+      "kind": "asset",
+      "sha256": "a7b206b607f421cc41416408ce1c156ab69b6961d74f42a69abb357adb04de0c"
+    },
+    {
+      "name": "月亮石",
+      "src": "./icons/月亮石.png",
+      "kind": "asset",
+      "sha256": "4e0bf6a70c66afcd0a9b96ff09ed528561c2e2d504ea9a463a8295e3fada38f2"
+    },
+    {
+      "name": "月华露",
+      "src": "./icons/月华露.png",
+      "kind": "asset",
+      "sha256": "6876a4b8520e828c39f20e5aa7891be58f9fb3fac3987fc34999f7e4222d48aa"
+    },
+    {
+      "name": "木鱼",
+      "src": "./icons/木鱼.png",
+      "kind": "asset",
+      "sha256": "975903e90c546b217e8c3390577ad1e024b5d3a4f71fcc8549597747c53fdf62"
+    },
+    {
+      "name": "未激活的符石",
+      "src": "./icons/未激活的符石.png",
+      "kind": "asset",
+      "sha256": "7e13d51f1e9d0d6cedddb24e0f61045b8407bd26e43289366574853b19a7b76e"
+    },
+    {
+      "name": "残卷",
+      "src": "./icons/残卷.png",
+      "kind": "asset",
+      "sha256": "8f01b29343ceb6ff7940aa740513a36298b1e1582db784ba4a10d59935ba04d9"
+    },
+    {
+      "name": "法宝任务书",
+      "src": "./icons/法宝任务书.png",
+      "kind": "asset",
+      "sha256": "76ebd27020b0c4b3b7d84b184fb4f980beb347aae4e0b9a3a5d2943ef3c36911"
+    },
+    {
+      "name": "海马",
+      "src": "./icons/海马.png",
+      "kind": "asset",
+      "sha256": "98d753aa88d474e6551aea22e0b55ba79bfb3e9dcb6af06642c0328a0cdc8a97"
+    },
+    {
+      "name": "灵饰指南书",
+      "src": "./icons/灵饰指南书.png",
+      "kind": "asset",
+      "sha256": "6b5a39d31bcd9f54da480e7cd2874a2c52590553c7b501509c4de2021772c9d9"
+    },
+    {
+      "name": "炼妖石",
+      "src": "./icons/炼妖石.png",
+      "kind": "asset",
+      "sha256": "83216c0664985cc3c49a36164db0c2395c242fda30e41e42e5deb2a937d86fc1"
+    },
+    {
+      "name": "特赦令牌",
+      "src": "./icons/特赦令牌.png",
+      "kind": "asset",
+      "sha256": "70465b68062a61e3e4f5fde877fd63c9da62a7d2d7b78bf7083c6db49226e1e5"
+    },
+    {
+      "name": "玄天残卷",
+      "src": "./icons/玄天残卷.png",
+      "kind": "asset",
+      "sha256": "84f92caa4e74cd36bb3d3c19819e326731f34abbc8ba1c80485ad4658d202cdf"
+    },
+    {
+      "name": "玄灵珠",
+      "src": "./icons/玄灵珠.png",
+      "kind": "asset",
+      "sha256": "b5aacda1552ad38126651d87819e381ffd918baf8fcae2fa48e1749cb5228e3c"
+    },
+    {
+      "name": "珍珠",
+      "src": "./icons/珍珠.png",
+      "kind": "asset",
+      "sha256": "7ec7eb2361837f00873376c630cc76f422ecfa82d8d7d569f463660a263cfb7f"
+    },
+    {
+      "name": "琵琶",
+      "src": "./icons/琵琶.png",
+      "kind": "asset",
+      "sha256": "975f812f602544fb721eb5253b4feb2edd244b8e48f2e59542c106246a370e69"
+    },
+    {
+      "name": "百合",
+      "src": "./icons/百合.png",
+      "kind": "asset",
+      "sha256": "e1719cf9d563d87b88b9b3d7f673cd56070040e0312144ac43fac43c935870af"
+    },
+    {
+      "name": "碧藕",
+      "src": "./icons/碧藕.png",
+      "kind": "asset",
+      "sha256": "2e33e33cf11ebeafce3e98070c2a13f2f05bfd517b23c2e8568127a568493724"
+    },
+    {
+      "name": "竖琴",
+      "src": "./icons/竖琴.png",
+      "kind": "asset",
+      "sha256": "bec926596be59e7f32e9ec077dbe291428a96b6484b9c8957a7c420604dd3b2d"
+    },
+    {
+      "name": "笛子",
+      "src": "./icons/笛子.png",
+      "kind": "asset",
+      "sha256": "ec1a4efe50e7e1760f742a0d8e2e20a5efab882ba181330c94345b9ffce7e9b9"
+    },
+    {
+      "name": "符石卷轴",
+      "src": "./icons/符石卷轴.png",
+      "kind": "asset",
+      "sha256": "f6eff23e35cce6ca102c28b3692118557994da72dc0a101dd080cf1200da81f9"
+    },
+    {
+      "name": "精魄灵石",
+      "src": "./icons/精魄灵石.png",
+      "kind": "asset",
+      "sha256": "b21ec1e3d71d1da8b9df9b82d8683f82a3a39eb9c13c0b1b14e379009006832a"
+    },
+    {
+      "name": "红玛瑙",
+      "src": "./icons/红玛瑙.png",
+      "kind": "asset",
+      "sha256": "2a0aefd68d7bc92ed37c0791f8c2b73bfa1d05ecf9f18e9ca9b01f1c76fce551"
+    },
+    {
+      "name": "红玫瑰",
+      "src": "./icons/红玫瑰.png",
+      "kind": "asset",
+      "sha256": "f3803084cd21ba80fe47e00cbd5a755062dd779619a0e4f1f7880b481014b23b"
+    },
+    {
+      "name": "编钟",
+      "src": "./icons/编钟.png",
+      "kind": "asset",
+      "sha256": "f548edb1ab0f99c93108eb4e5447b25b81277f617aac725f1644e3cbdd83e961"
+    },
+    {
+      "name": "翡翠石",
+      "src": "./icons/翡翠石.png",
+      "kind": "asset",
+      "sha256": "599f2c919a74d66bf953b2d490d3d0c0c5afc71ebf7083a56ee152029e7e6cd8"
+    },
+    {
+      "name": "舍利子",
+      "src": "./icons/舍利子.png",
+      "kind": "asset",
+      "sha256": "e2a266fa86fa67b36176bce20acf0b1cdfe2cf00d229247a6f9523c723d63016"
+    },
+    {
+      "name": "藏宝图",
+      "src": "./icons/藏宝图.png",
+      "kind": "asset",
+      "sha256": "af4e7f94018a9760f3beca56ddfafdd91bb0fa5342c28701e1ea090b83e6835d"
+    },
+    {
+      "name": "超级净瓶玉露",
+      "src": "./icons/超级净瓶玉露.png",
+      "kind": "asset",
+      "sha256": "7ea5d22f26df399e90f4be911eac560cd24636bfd6ae7f6a3d53e90c74a328f4"
+    },
+    {
+      "name": "超级金柳露",
+      "src": "./icons/超级金柳露.png",
+      "kind": "asset",
+      "sha256": "15d31a7477251a16105a5f86f17af3ee9cc3f7b53267a8821a7ff1e7bb50deb3"
+    },
+    {
+      "name": "避水珠",
+      "src": "./icons/避水珠.png",
+      "kind": "asset",
+      "sha256": "f17a36cc7aa9083698fdfd1b2f1c67667c8881cbcd3daaaa6e085713dccd1a6a"
+    },
+    {
+      "name": "金刚石",
+      "src": "./icons/金刚石.png",
+      "kind": "asset",
+      "sha256": "29b4b521e5458bb8ac067f1a5373fd44dc1d3ec5555b66a1fc8016986d7aedb3"
+    },
+    {
+      "name": "金柳露",
+      "src": "./icons/金柳露.png",
+      "kind": "asset",
+      "sha256": "90c130ac5d96992e0bd63fb5ae1eb10b98d199d9c2667557e5a5a1a68085b77e"
+    },
+    {
+      "name": "金银锦盒",
+      "src": "./icons/金银锦盒.png",
+      "kind": "asset",
+      "sha256": "bd2a0b606231e7fa880e15346e173167f30ead1bd944d92d91f5bc95f353dacc"
+    },
+    {
+      "name": "附魔宝珠",
+      "src": "./icons/附魔宝珠.png",
+      "kind": "asset",
+      "sha256": "d3ec3a6dc38eadfa7ac54deb12142f9649642e4616ad3ce4e01bbc36f7d1a2e9"
+    },
+    {
+      "name": "高级召唤兽内丹",
+      "src": "./icons/高级召唤兽内丹.png",
+      "kind": "asset",
+      "sha256": "8d8ce143da58258529eeab25add385faedd2bdb09cbe261a4215fa0d830ddf8b"
+    },
+    {
+      "name": "高级魔兽要诀",
+      "src": "./icons/高级魔兽要诀.png",
+      "kind": "asset",
+      "sha256": "925f44dc8353e71525c3a5d45bcea187efaa018c1fc7668ab60f1986f75d38a4"
+    },
+    {
+      "name": "黑宝石",
+      "src": "./icons/黑宝石.png",
+      "kind": "asset",
+      "sha256": "4149e17e3e88035b52a3599a6dc76ed2e89e3c23e63936150b91ac689b34df47"
+    },
+    {
+      "name": "龙鳞",
+      "src": "./icons/龙鳞.png",
+      "kind": "asset",
+      "sha256": "be59f095437c8e70dcba83dabfff5536ce54fded35c37995735e15a34f19ddab"
+    }
+  ],
+  "downloaded": [
+    {
+      "name": "制造指南书",
+      "src": "./icons/treasure/zhizao-zhinanshu.jpg",
+      "imageUrl": "https://i2.sinaimg.cn/gm/ol/mhxy/new/item002.jpg",
+      "sha256": "a8259d462a4f8e87f15384ad0580cbf55ea45502cb393892ed7d98c34e6b8c4d",
+      "kind": "asset",
+      "sourcePage": "https://games.sina.com.cn/z/xyq/2/mfjn/index.shtml",
+      "sourcePageTitle": "技能大全：打造原料 — 新浪游戏《梦幻西游》官方网站合作专区",
+      "retrievedAt": "2026-10-27",
+      "contentType": "image/jpeg",
+      "width": 120,
+      "height": 120,
+      "modified": false,
+      "visualVerification": "Downloaded independent image viewed locally. Classic PC-game item art; no visible level numeral, shared across levels. Not a screenshot crop or generated illustration.",
+      "rights": "Game-art rights remain with the relevant rightsholder, including NetEase; the hosting page supplies no open redistribution license. Not covered by the project MIT license."
+    },
+    {
+      "name": "百炼精铁",
+      "src": "./icons/treasure/bailian-jingtie.jpg",
+      "imageUrl": "https://i1.sinaimg.cn/gm/ol/mhxy/new/item001.jpg",
+      "sha256": "91a0770e1cb15e7dfb74e6d96e2ccdb4642db0c6b649ac1202c99a335682498f",
+      "kind": "asset",
+      "sourcePage": "https://games.sina.com.cn/z/xyq/2/mfjn/index.shtml",
+      "sourcePageTitle": "技能大全：打造原料 — 新浪游戏《梦幻西游》官方网站合作专区",
+      "retrievedAt": "2026-10-27",
+      "contentType": "image/jpeg",
+      "width": 120,
+      "height": 120,
+      "modified": false,
+      "visualVerification": "Downloaded independent image viewed locally. Classic PC-game item art; no visible level numeral, shared across levels. Not a screenshot crop or generated illustration.",
+      "rights": "Game-art rights remain with the relevant rightsholder, including NetEase; the hosting page supplies no open redistribution license. Not covered by the project MIT license."
+    }
+  ],
+  "retiredGeneric": [
+    "book.svg",
+    "metal.svg"
+  ],
+  "generic": [
+    {
+      "src": "./icons/treasure/coins.svg",
+      "kind": "generic",
+      "label": "梦幻币通用示意图",
+      "provenance": "Code-authored semantic SVG, not original game artwork",
+      "sha256": "b70b74a51e8965a1c4ba02b160beeecdd4ac32500f7d83bc51d0f7e30da80a2c"
+    },
+    {
+      "src": "./icons/treasure/beans.svg",
+      "kind": "generic",
+      "label": "花豆通用示意图",
+      "provenance": "Code-authored semantic SVG, not original game artwork",
+      "sha256": "58b3cec8e8c20f0f805aae5e51ed075a9317deb22d1d5b53862453ad7ea7572d"
+    },
+    {
+      "src": "./icons/treasure/equipment.svg",
+      "kind": "generic",
+      "label": "低级装备通用示意图",
+      "provenance": "Code-authored semantic SVG, not original game artwork",
+      "sha256": "5b856f5cf514e31e2d3c1fcee18184053af0de7857feabd33aeb52ce960976df"
+    },
+    {
+      "src": "./icons/treasure/pet.svg",
+      "kind": "generic",
+      "label": "召唤兽通用轮廓示意图",
+      "provenance": "Code-authored semantic SVG, not original game artwork",
+      "sha256": "496e1a47b06fa3c5caafbc9b2f7701aab91dd508ae61086d959705f23355ee6e"
+    },
+    {
+      "src": "./icons/treasure/flower.svg",
+      "kind": "generic",
+      "label": "花卉通用示意图",
+      "provenance": "Code-authored semantic SVG, not original game artwork",
+      "sha256": "03bc2531461e7966c86df5b1b9b2ecc73e0148d3b3974861ee558f74a1811f22"
+    },
+    {
+      "src": "./icons/treasure/furniture.svg",
+      "kind": "generic",
+      "label": "家具通用示意图",
+      "provenance": "Code-authored semantic SVG, not original game artwork",
+      "sha256": "0477255c16ae20e2248459f9f8d6acfee7221d88c506b45560a18edba87005d4"
+    },
+    {
+      "src": "./icons/treasure/potion.svg",
+      "kind": "generic",
+      "label": "药品烹饪通用示意图",
+      "provenance": "Code-authored semantic SVG, not original game artwork",
+      "sha256": "c699d11dbecfe96414bdc2e859a910123da8019703c5c48980138f5e1be60c50"
+    },
+    {
+      "src": "./icons/treasure/person.svg",
+      "kind": "generic",
+      "label": "找人通用示意图",
+      "provenance": "Code-authored semantic SVG, not original game artwork",
+      "sha256": "274617e735445433cbaec9c3cd60bd8c67df968b5c2cf654aa3130ada0ccb8ab"
+    },
+    {
+      "src": "./icons/treasure/cost.svg",
+      "kind": "generic",
+      "label": "成本通用示意图",
+      "provenance": "Code-authored semantic SVG, not original game artwork",
+      "sha256": "244a15486898d241c9e0eb64441df899e26dcee7fd52d4f87b557fc681469d66"
+    },
+    {
+      "src": "./icons/treasure/bowl.svg",
+      "kind": "generic",
+      "label": "钵通用示意图",
+      "provenance": "Code-authored semantic SVG, not original game artwork",
+      "sha256": "37ffbe4df3d37e5a19aa31ba194d6a60faa643ec9cdd384f43766bdf2454778d"
+    },
+    {
+      "src": "./icons/treasure/flute.svg",
+      "kind": "generic",
+      "label": "箫通用示意图",
+      "provenance": "Code-authored semantic SVG, not original game artwork",
+      "sha256": "f29616f9ba82f213be53a86a87dc243eab8006a0f22a09c2e77d2833fc4518b1"
+    },
+    {
+      "src": "./icons/treasure/battle-token.svg",
+      "kind": "generic",
+      "label": "战魄通用示意图",
+      "provenance": "Code-authored semantic SVG, not original game artwork",
+      "sha256": "c06b5b8510421a736b46b893e1fac6b2ab6ae8279230e55fbeae141fcf969a6c"
+    }
+  ]
+}
